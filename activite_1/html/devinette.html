@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jeu de devinette</title>
+</head>
+
+<body>
+    <script src="../js/devinette.js"></script>
+</body>
+
+</html>
+
+<!--
+var result = Number(prompt("Saisir un nombre entre 1 et 100"));
+var essai = 1;
+for (essai; (essai <6) && (result !== solution); essai++) {
+    if (result == solution) {
+      console.log("Bravo ! La solution était  " + solution + ".\nVous avez trouvé au bout de " + essai +" essai(s)" );
+    }else if (result < solution) {
+      console.log(result + " est trop petit " + essai);
+      var result = Number(prompt("Saisir un nombre entre 1 et 100"));
+    }else if (result > solution) {
+      console.log(result + " trop grand " + essai);
+      var result = Number(prompt("Saisir un nombre entre 1 et 100"));
+    }else if (result == solution) {
+      console.log("Bravo ! La solution était  " + solution + ".\nVous avez trouvé au bout de " + essai +" essai(s)" );
+    }
+}
+if ((essai == 6) && (result != solution)) {
+  console.log("Perdu ! " + essai + " max");
+}else if (result == solution) {
+  console.log("Bravo ! La solution était  " + solution + ".\nVous avez trouvé au bout de " + essai +" essai(s)" );
+}
+
+
+var nombreSaisi = Number(prompt("Saisir un nombre entre 1 et 100"));
+var essai = 1;
+for (essai; (essai <6) && (nombreSaisi !== solution) && ((nombreSaisi >= 1) && (nombreSaisi <= 100)); essai++) {
+    if (nombreSaisi == solution) {
+      console.log("Bravo ! La solution était  " + solution + ".\nVous avez trouvé au bout de " + essai +" essai(s)" );
+    }else if (nombreSaisi < solution) {
+      console.log(nombreSaisi + " est trop petit " + essai);
+      nombreSaisi = Number(prompt("Saisir un nombre entre 1 et 100"));
+    }else if (nombreSaisi > solution) {
+      console.log(nombreSaisi + " est trop grand " + essai);
+      var nombreSaisi = Number(prompt("Saisir un nombre entre 1 et 100"));
+    }else if (nombreSaisi == solution) {
+      console.log("Bravo ! La solution était  " + solution + ".\nVous avez trouvé au bout de " + essai +" essai(s)" );
+    }
+}
+if ((essai == 6) && (nombreSaisi != solution)) {
+  console.log("Perdu... La solution était " + solution + " !");
+}else if (nombreSaisi == solution) {
+  console.log("Bravo ! La solution était  " + solution + ".\nVous avez trouvé au bout de " + essai +" essai(s)" );
+}else {
+  console.log("Vous devez saisir un nombre entre 1 et 100");
+}
